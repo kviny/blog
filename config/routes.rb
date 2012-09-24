@@ -1,4 +1,15 @@
 Blog::Application.routes.draw do
+
+  root :to => "home#index"
+
+  get "users/index"
+
+  get "users/show"
+
+  get "home/index"
+
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
